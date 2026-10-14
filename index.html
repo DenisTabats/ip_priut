@@ -26,24 +26,28 @@
       }
     }
 
-    .hero-img {
+    /* Блоки-заглушки вместо фотографий */
+    .img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e9f5ee;
+      color: #198754;
       width: 100%;
+    }
+    .hero-box {
       height: 520px;
-      object-fit: cover;
-      display: block;
+      border-radius: 1rem;
+      font-size: 10rem;
     }
-    .pet-img {
-      width: 100%;
+    .about-box {
+      height: 260px;
+      border-radius: 1rem;
+      font-size: 5rem;
+    }
+    .pet-box {
       height: 240px;
-      object-fit: cover;
-      display: block;
-    }
-    .about-img {
-      width: 100%;
-      height: 100%;
-      min-height: 260px;
-      object-fit: cover;
-      display: block;
+      font-size: 6rem;
     }
 
     .form-control:user-invalid,
@@ -137,8 +141,9 @@
           </div>
 
           <div class="col-lg-6">
-            <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&h=900&fit=crop"
-                 class="hero-img rounded-4" alt="Собака из приюта">
+            <div class="img-box hero-box">
+              <i class="fa-solid fa-dog"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -195,16 +200,19 @@
 
         <div class="row g-4 align-items-stretch">
           <div class="col-md-6 col-lg-4">
-            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=500&fit=crop"
-                 class="about-img rounded-4" alt="Собаки в приюте">
+            <div class="img-box about-box">
+              <i class="fa-solid fa-dog"></i>
+            </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&h=500&fit=crop"
-                 class="about-img rounded-4" alt="Кошка">
+            <div class="img-box about-box">
+              <i class="fa-solid fa-cat"></i>
+            </div>
           </div>
           <div class="col-lg-4">
-            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=500&fit=crop"
-                 class="about-img rounded-4" alt="Волонтёры с животными">
+            <div class="img-box about-box">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -228,8 +236,9 @@
 
           <div class="col">
             <article class="card h-100 border-0 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=600&h=400&fit=crop"
-                   class="pet-img card-img-top" alt="Соня">
+              <div class="img-box pet-box">
+                <i class="fa-solid fa-cat"></i>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                   <h3 class="h5 fw-bold mb-0">Соня</h3>
@@ -247,8 +256,9 @@
 
           <div class="col">
             <article class="card h-100 border-0 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600&h=400&fit=crop"
-                   class="pet-img card-img-top" alt="Марсик">
+              <div class="img-box pet-box">
+                <i class="fa-solid fa-cat"></i>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                   <h3 class="h5 fw-bold mb-0">Марсик</h3>
@@ -266,8 +276,9 @@
 
           <div class="col">
             <article class="card h-100 border-0 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?w=600&h=400&fit=crop"
-                   class="pet-img card-img-top" alt="Тайсон">
+              <div class="img-box pet-box">
+                <i class="fa-solid fa-dog"></i>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                   <h3 class="h5 fw-bold mb-0">Тайсон</h3>
@@ -285,8 +296,9 @@
 
           <div class="col">
             <article class="card h-100 border-0 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=600&h=400&fit=crop"
-                   class="pet-img card-img-top" alt="Ева">
+              <div class="img-box pet-box">
+                <i class="fa-solid fa-dog"></i>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                   <h3 class="h5 fw-bold mb-0">Ева</h3>
@@ -304,8 +316,9 @@
 
           <div class="col">
             <article class="card h-100 border-0 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&h=400&fit=crop"
-                   class="pet-img card-img-top" alt="Плюша">
+              <div class="img-box pet-box">
+                <i class="fa-solid fa-cat"></i>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                   <h3 class="h5 fw-bold mb-0">Плюша</h3>
@@ -323,8 +336,9 @@
 
           <div class="col">
             <article class="card h-100 border-0 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?w=600&h=400&fit=crop"
-                   class="pet-img card-img-top" alt="Барс">
+              <div class="img-box pet-box">
+                <i class="fa-solid fa-cat"></i>
+              </div>
               <div class="card-body d-flex flex-column">
                 <div class="d-flex justify-content-between align-items-start mb-2">
                   <h3 class="h5 fw-bold mb-0">Барс</h3>
@@ -433,8 +447,8 @@
               <i class="fa-solid fa-phone fa-lg text-success me-3"></i>
               <div>
                 <div class="small text-secondary">Есть вопросы? Позвоните</div>
-                <a href="tel:+74822332211" class="text-dark text-decoration-none fw-bold">
-                  +7 (4822) 33-22-11
+                <a href="tel:+79491234567" class="text-dark text-decoration-none fw-bold">
+                  +7 (949) 123-45-67
                 </a>
               </div>
             </div>
@@ -470,7 +484,7 @@
                       Телефон <span class="text-danger">*</span>
                     </label>
                     <input type="tel" class="form-control" id="phone" name="phone"
-                           placeholder="+7 (4822) 33-22-11" required
+                           placeholder="+7 (949) 123-45-67" required
                            pattern="\+?[0-9\s\-\(\)]{10,18}"
                            title="От 10 до 18 цифр, можно с +, пробелами и скобками">
                     <div class="invalid-feedback">Введите номер телефона (минимум 10 цифр).</div>
@@ -636,13 +650,13 @@
         <div class="col-md-8">
           <div class="row g-3">
             <div class="col-sm-6">
-              <a href="tel:+74822332211" class="d-flex align-items-center text-decoration-none">
+              <a href="tel:+79491234567" class="d-flex align-items-center text-decoration-none">
                 <span class="btn btn-success rounded-circle me-3" style="width: 44px; height: 44px; padding: 0; line-height: 44px;">
                   <i class="fa-solid fa-phone"></i>
                 </span>
                 <span>
                   <span class="d-block small text-secondary">Позвонить</span>
-                  <span class="d-block fw-bold text-dark">+7 (4822) 33-22-11</span>
+                  <span class="d-block fw-bold text-dark">+7 (949) 123-45-67</span>
                 </span>
               </a>
             </div>
